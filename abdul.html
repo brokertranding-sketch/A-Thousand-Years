@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Thousand Years - 3D Lyrics Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scene-container">
+        <div class="particles" id="particles"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header-3d">
+            <div class="title-wrapper">
+                <h1 class="title-3d" data-text="A THOUSAND YEARS">A THOUSAND YEARS</h1>
+                <div class="subtitle-3d">
+                    <span class="glow-text">Christina Perri</span>
+                    <div class="pulse-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="glow-text">The Twilight Saga</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="gallery-section">
+            <div class="gallery-container">
+                <div class="gallery-card card-3d" id="main-image">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/abdul2.jpeg" alt="Album Art" class="gallery-image">
+                            <div class="card-overlay">
+                                <div class="overlay-text">Click to View</div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>A Thousand Years</h3>
+                                <p>Lyrics Experience</p>
+                                <div class="album-info">
+                                    <p>From: Abdul_Student2</p>
+                                    <p>Hope you enjoy!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-frame-3d"></div>
+                
+                <div class="floating-note note-1">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="floating-note note-2">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="floating-note note-3">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="lyrics-section-3d">
+            <div class="lyrics-container-3d">
+                <div class="lyrics-stage">
+                    <div class="stage-platform"></div>
+                    <div class="lyrics-display" id="lyrics-display">
+                        <div class="lyrics-line-3d" id="line1"></div>
+                        <div class="lyrics-line-3d" id="line2"></div>
+                        <div class="lyrics-line-3d" id="line3"></div>
+                        <div class="lyrics-line-3d" id="line4"></div>
+                    </div>
+                    
+                    <!-- Visualizer -->
+                    <div class="visualizer">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Control Panel -->
+        <section class="controls-3d">
+            <div class="control-panel">
+                <div class="panel-header">
+                    <h3>CONTROL PANEL</h3>
+                    <div class="panel-lights">
+                        <div class="light active"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                    </div>
+                </div>
+                
+                <div class="controls-grid">
+                    <button class="control-btn-3d btn-play" id="startBtn">
+                        <div class="btn-content">
+                            <i class="fas fa-play"></i>
+                            <span>START</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    
+                    <button class="control-btn-3d btn-slow" id="slowBtn">
+                        <div class="btn-content">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>SLOW MO</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    
+                    <button class="control-btn-3d btn-reset" id="resetBtn">
+                        <div class="btn-content">
+                            <i class="fas fa-redo"></i>
+                            <span>RESET</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    
+                    <button class="control-btn-3d btn-effects" id="effectsBtn">
+                        <div class="btn-content">
+                            <i class="fas fa-magic"></i>
+                            <span>EFFECTS</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+                
+                <!-- Speed Control -->
+                <div class="speed-control">
+                    <label for="speedSlider">SPEED CONTROL</label>
+                    <input type="range" id="speedSlider" min="0.5" max="3" step="0.1" value="1">
+                    <div class="slider-value" id="speedValue">1.0x</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer with 3D Effect -->
+        <footer class="footer-3d">
+            <div class="footer-content">
+                <div class="signature-3d">
+                    <span class="signature-text">CREATED BY ABDUL STUDENT</span>
+                    <div class="signature-line"></div>
+                </div>
+                <p class="footer-message">Experience the lyrics in a new dimension</p>
+                <div class="social-icons">
+                    <div class="icon-3d"><i class="fas fa-code"></i></div>
+                    <div class="icon-3d"><i class="fas fa-heart"></i></div>
+                    <div class="icon-3d"><i class="fas fa-music"></i></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Audio for Background -->
+    <audio id="bgAudio" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-driving-ambition-32.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
